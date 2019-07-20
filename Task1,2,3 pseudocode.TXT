@@ -1,0 +1,40 @@
+Task1
+READ image
+convert image to matirx
+set Burn_out to 0
+LOOP through each point in matrix
+	IF value of the point is greater than 255 THEN
+		set Burn_out to 1
+	ELSE
+		pass
+END LOOP
+IF Burn_out equal to 1 THEN
+	RETURN True
+ELSE
+	RETURN False
+
+Task2
+READ image
+convert image to matirx
+LOOP through each row in matrix
+	set New_row to an empty row
+	LOOP through each point in the row
+		add a point with the same value to the end of New_row
+	END LOOP
+	set the row to New_row
+END LOOP
+convert matrix to image
+RETURN image
+
+Task3
+READ image
+convert image to matrix
+READ MaxVal 
+LOOP through each point in the matrix
+	IF point value is greater than MaxVal THEN
+		set point value to MaxVal
+	ELSE
+		pass
+END LOOP
+convert matrix to image
+RETURN image
